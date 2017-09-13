@@ -42,12 +42,24 @@ body {
   color: #000;
 }
 
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 5px;
+@media screen and (min-width: 416px) {
+    .caption span.border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 25px;
+      letter-spacing: 5px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .caption span.border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 15px;
+      letter-spacing: 5px;
+    }
 }
 
 a {
@@ -55,17 +67,30 @@ a {
   text-decoration: none;
 }
 
-
-.header {
+.headercontainer {
   position: fixed;
   background: #000;
-  height: 20px;
-  width: 100%;
   top: 0px;
-  color: #fff;
-  font-size: 15px;
-  line-height: 21px;
-  padding: 8px 50px;
+  width: 100%;
+}
+@media screen and (max-width: 414px){
+    .header {
+      padding: 8px 10px;
+      width: auto;
+      font-size: 15px;
+      line-height: 21px;
+      color: #fff;
+    }
+}
+
+@media screen and (min-width: 415px){
+    .header {
+      padding: 8px 50px;
+      width: auto;
+      font-size: 15px;
+      line-height: 21px;
+      color: #fff;
+    }
 }
 
 .header a {
